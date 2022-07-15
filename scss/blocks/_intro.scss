@@ -1,0 +1,116 @@
+.intro{
+  margin-top: 100px;
+  background-color:#1B262F;
+  background-image: url(/img/back-img.png);
+  background-position: -5% -136px;
+  background-size: 40% 600px;
+  background-repeat: no-repeat;
+}
+
+
+.intro__inner{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 140px;
+}
+
+
+.intro__title{
+  max-width: 445px;
+  width: 100%;
+}
+
+.intro__heading{
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #FBFCFE; 
+}
+
+.intro__param{
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #FBFCFE;
+  mix-blend-mode: normal;
+  opacity: 0.7; 
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.intro__button{
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+   text-align: center;
+  letter-spacing: -0.115385px;
+  color: #FBFCFE; 
+  background: transparent;
+  padding: 15px 30px;
+  border-radius: 24px;
+  border: 2px solid #fff;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+.intro__button:hover{
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.1);
+  transition: 0.4s ease;
+
+}
+
+.intro__list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3,2fr);
+  align-items: center;
+  margin-top: 60px;
+
+}
+
+.intro__item{
+  margin:20px;
+}
+
+
+@media (max-width:1010px){
+  .intro__inner{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+
+  }
+  .intro{
+    background-position: 50% -300px;
+    background-size: 100% 588px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width:600px){
+  .intro__list{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+   }
+}
+
+@media (max-width:400px){
+  .intro{
+    background-size:150% 555px;
+  }
+}
